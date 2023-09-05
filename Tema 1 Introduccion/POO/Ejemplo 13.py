@@ -3,22 +3,26 @@
 
 """
 
-class Perro():
-    def __init__(self,nombre, raza, edad):
-        self.__nombre=nombre
-        self.__raza=raza
-        self.__edad=edad
-        print("Objeto Creado")
-    def get_nombre(self):
-        return self.__nombre
-    def set_nombre(self,value):
-        self.__nombre=value
+class Trabajador():
+    def __init__(self,numero,nombre,apellido):
+        self.numero=numero
+        self.nombre=nombre
+        self.apellido=apellido
+    def sueldo_semanal(self,*args):
+        dias=args[0]
+        pago=args[1]
+        return dias*pago
+    def sueldo_mensual(self,**kwargs):
+        dias=kwargs.get("dias")
+        pago=kwargs.get("pago")
+        return (dias*pago)*4
 
-perrito1=Perro("Whisky","Chihuahua",11)
-print(perrito1.get_nombre())
+Trabajador1=Trabajador(1234,"Juan","Perez")
+sueldoSemanal=Trabajador1.sueldo_semanal(7,780)
+sueldoMensual=Trabajador1.sueldo_mensual(dias=7,pago=780)
 
-perrito1.set_nombre("Tequila")
-print(perrito1.get_nombre())
+print("{} tiene un sueldo Semanal: {}".format(Trabajador1.nombre,sueldoSemanal))
+print("{} tiene un sueldo Mensual: {}".format(Trabajador1.nombre,sueldoMensual))
 
 
 
