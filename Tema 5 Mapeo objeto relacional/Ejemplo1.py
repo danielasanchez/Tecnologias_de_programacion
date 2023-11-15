@@ -57,6 +57,7 @@ class Pelicula(Model):
     
     
 db.connect()
+
 db.create_tables([Actor,
                   Genero,
                   Productora,
@@ -66,7 +67,7 @@ db.create_tables([Actor,
                  )
 
 
-
+                 #Perro(nombre="Tequila",edad=12,raza="chihuahua")
 actor_1 = Actor.create(nombre='Brad Pitt', nacionalidad='estadounidense')
 actor_2 = Actor.create(nombre='Leonardo DiCaprio',nacionalidad='estadounidense')
 actor_3 = Actor.create(nombre='Ryan Reynolds', nacionalidad='estadounidense')
@@ -89,20 +90,22 @@ productora_3 = Productora.create(nombre="Paramount Pictures",pais="USA")
 
 
 pelicula_1 = Pelicula.create(titulo='Titanic', fecha_estreno=datetime.date(1998, 1, 1), productora=productora_1)
-pelicula_1.autores = [actor_2, actor_5]
+pelicula_1.actores = [actor_2, actor_5]
 pelicula_1.generos = [genero_4]
 
 pelicula_2 = Pelicula.create(titulo='La propuesta', fecha_estreno=datetime.date(2009, 6, 19), productora=productora_2)
-pelicula_2.autores = [actor_3, actor_4]
+pelicula_2.actores = [actor_3, actor_4]
 pelicula_2.generos = [genero_3, genero_4]
 
 pelicula_3 = Pelicula.create(titulo='Deadpool', fecha_estreno=datetime.date(2016, 2, 11), productora=productora_1)
-pelicula_3.autores = [actor_3]
+pelicula_3.actores = [actor_3]
 pelicula_3.generos = [genero_2, genero_3]
 
 
 actores = Actor.select()
 
-
 for a in actores:
-    print(f"Actor: {a.nombre}")
+    print(f"{a.nombre}")
+
+for a in actor_3.peliculas:
+    print(f"{a.titulo}")
