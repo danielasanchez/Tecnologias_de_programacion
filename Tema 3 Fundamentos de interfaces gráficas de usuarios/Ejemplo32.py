@@ -11,7 +11,7 @@ def obtener():
     #elementos seleccionados
     print(carrera.curselection())
     selec=carrera.curselection()
-    print(carrera.get(selec[0]))
+    print(carrera.get(selec[1]))
     # carrera.delete(2,END)
     
 
@@ -27,7 +27,7 @@ label1.pack()
 label1.config(width=10,bg="gray",pady=20)
 
 # selectmode: browse, single, multiple, extended
-carrera = Listbox(principal,height=5,selectmode=BROWSE)
+carrera = Listbox(principal,height=5,selectmode=MULTIPLE)
 carrera.insert(1,"LNI")
 carrera.insert(2,"LC")
 carrera.insert(3,"LA")

@@ -28,7 +28,7 @@ label2.config(width=10,bg="gray")
 # show = establecer el caracter a sustituir los caracteres
 input2 = Entry(principal, highlightthickness=4, highlightcolor="blue",
                selectbackground="pink", selectforeground = "green",
-               show="*")
+               show="%")
 
 input2.place(x=160,y=100)
 

@@ -37,7 +37,7 @@ label1.pack()
 label1.config(width=10,bg="gray",pady=20)
 
 
-opcion1 = Checkbutton(principal,text="opcion 1",
+opcion1 = Checkbutton(principal,text="Negro",
                       bg="gray",variable=op1, 
                       onvalue="valor 1",offvalue="desactivada").pack()
 opcion2 = Checkbutton(principal,text="opcion 2",

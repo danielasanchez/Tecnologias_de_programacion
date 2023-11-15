@@ -21,6 +21,7 @@ menuOpciones1 = Menu(menuPrincipal, tearoff=0)
 menuOpciones2 = Menu(menuPrincipal, tearoff=0)
 
 menuOpciones1.add_command(label="opcion 1", command = lambda : ventanita1(principal))
+                                            #command = funcion() ventanita(parametro)       
 menuOpciones1.add_command(label="opcion 2", command = lambda : ventanita2(principal))
 menuOpciones1.add_separator()
 menuOpciones1.add_command(label="Cerrar", command=principal.destroy)

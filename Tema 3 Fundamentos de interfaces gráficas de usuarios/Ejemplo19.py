@@ -17,8 +17,8 @@ label1 = Label(principal, text="Nombre").pack()
 # highlightthickness = tamaño del borde al seleccionar
 # highlightcolor = color de borde al seleccionar
 input1 = Entry(principal, 
-               highlightthickness=4, 
-               highlightcolor="blue")
+               highlightthickness=10, 
+               highlightcolor="pink")
 
 input1.pack()
 

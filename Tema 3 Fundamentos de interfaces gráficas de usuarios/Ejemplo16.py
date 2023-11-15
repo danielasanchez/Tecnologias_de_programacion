@@ -13,7 +13,7 @@ principal.title("Mi primer ventana")
 principal.geometry("800x500+400+200")
 
 # img = Image.open(r"C:\Users\Daniela\Documents\perrito.png").resize((300,300))
-img = Image.open("perrito.png").resize((300,300))
+img = Image.open("Homero.jpg").resize((300,300))
 img = ImageTk.PhotoImage(img)
 
 label1 = Label(principal,image=img)

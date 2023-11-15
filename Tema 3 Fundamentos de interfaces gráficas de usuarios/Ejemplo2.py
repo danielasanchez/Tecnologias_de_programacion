@@ -14,6 +14,9 @@ principal.geometry("800x500+400+200")
 #Se crea la etiqueta haciendo una instancia de la clase Label
 label1= Label(principal,text="Mi Etiqueta")
 label1.pack()
-
+label2= Label(principal,text="Mi Etiqueta")
+label2.pack()
+label3= Label(principal,text="Mi Etiqueta")
+label3.pack()
 principal.mainloop()
 

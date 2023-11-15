@@ -28,11 +28,12 @@ text1 = Text(principal, highlightthickness=4, highlightcolor="blue",
 # height = lineas
 # width = caracteres
 # wrap = WORD ,  CHAR o NONE
-text1.config(height=4,width=20,wrap=NONE)
+text1.config(height=5,width=20,wrap=CHAR)
 text1.place(x=130,y=60)
 
+#revisar si hubo cambio
 #r.c o END
-text1.insert(1.0,"Hola mundo")
+text1.insert(2.3,"Hola")
 
 
 boton1 = Button(principal, text="Obtener", bg="gray",

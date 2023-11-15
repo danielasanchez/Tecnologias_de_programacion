@@ -15,7 +15,7 @@ principal.geometry("800x500+400+200")
 label1= Label(principal,text="Mi Etiqueta",
               font=("Arial",16,"bold","underline"),
               fg="blue",bg="green",height=4, width=20,
-              anchor=SE,bd=5,relief="ridge",padx=45,pady=10)
+              anchor=CENTER,bd=5,relief="ridge",padx=100,pady=10)
 
 label1.pack()
 

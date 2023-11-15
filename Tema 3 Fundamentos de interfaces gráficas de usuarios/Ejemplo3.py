@@ -20,7 +20,7 @@ label1 = Label(principal, text="Soy una etiqueta")
 # side = TOP, BOTTOM, LEFT o RIGHT
 # fill = X, Y o BOTH
 # expand = TRUE
-label1.pack(side=BOTTOM,fill=X,pady=5)
+label1.pack(side=BOTTOM,pady=20)
 # pady = pixeles de separacion
 label2 = Label(principal, text="Soy otra etiqueta")
 label2.pack(side=BOTTOM,fill=X,pady=5)

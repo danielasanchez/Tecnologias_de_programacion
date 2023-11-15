@@ -28,7 +28,7 @@ label1 = Label(principal, text="Alumno:")
 label1.pack()
 label1.config(width=50,bg="gray",pady=20)
 
-nombre.set("Daniela")
+#nombre.set("Daniela")
 input1 = Entry(principal,textvariable=nombre,width=35).pack()
 
 label2 = Label(principal, text="Carrera:")
