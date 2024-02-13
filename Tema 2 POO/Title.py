@@ -1,1 +1,0 @@
-print("Tema 2")
